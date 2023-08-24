@@ -55,11 +55,11 @@ const Contact = () => {
           visible: { opacity: 1, y: 0 },
         }}
         >
-            <img className="h-[340px] w-[475px] mt-14" src="../assets/contact-image.jpeg" alt="contact" />
+            <img className="h-[340px] w-full mt-14 mr-10" src="../assets/contact-image.jpeg" alt="contact" />
         </motion.div>
 
         <motion.div
-        className="basis-1/2 pt-14  mr-10 md:mt-0"
+        className="basis-1/2 pt-14 mr-10 md:mt-0"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
