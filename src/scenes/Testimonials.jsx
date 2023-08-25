@@ -1,10 +1,10 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import useMediaQuery from "../hooks/useMediaQuery";
+
 
 const Testimonials = () => {
 
-    const testimonialsStyles = `mx-auto relative w-[350px] h-[300px] flex flex-col justify-end
+    const testimonialsStyles = `mx-auto relative w-[300px] h-[250px] flex flex-col justify-end
     p-12 mt-44 before:absolute before:top-[-120px] before:-ml-[-15px] before:left-1/2 `;
 
     return (
@@ -31,9 +31,9 @@ const Testimonials = () => {
         </motion.div>
 
         {/* TESTIMONIALS */}
-      <div className=" md:flex md:justify-between gap-8">
+      <div className=" md:flex md:justify-between gap-1 mt-5 ">
         <motion.div
-          className={ ` bg-blue ${testimonialsStyles} before:content-person1 ` }
+          className={ `p-6 pb-4 bg-blue ${testimonialsStyles} before:content-person1 ` }
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -51,7 +51,7 @@ const Testimonials = () => {
         </motion.div>
 
         <motion.div
-          className={ ` bg-red ${testimonialsStyles} before:content-person2 ` }
+          className={ ` p-6 pb-4 bg-red ${testimonialsStyles} before:content-person2 ` }
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -70,7 +70,7 @@ const Testimonials = () => {
         </motion.div>
 
         <motion.div
-          className={ ` bg-yellow ${testimonialsStyles} before:content-person3 ` }
+          className={ ` p-6 pb-4 bg-yellow ${testimonialsStyles} before:content-person3 ` }
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

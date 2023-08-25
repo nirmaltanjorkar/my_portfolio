@@ -14,7 +14,7 @@ const Landing = ({setSelectedPage}) => {
             {/* IMAGE SECTION */}
             <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-30">
                 {isAboveMediumScreens ? (
-                    <div className="relative border-2 border-blue pl-5 pb-5  ">
+                    <div className="relative border-2 border-blue pl-5 pb-5">
                         <img 
                         alt="profile"
                         className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
@@ -31,7 +31,7 @@ const Landing = ({setSelectedPage}) => {
                 </div>
 
                 {/* MAIN SECTION */}
-                <div className="z-30 basis-3/5 mt-16 md:mt-30">
+                <div className="z-30 basis-3/5 mt-40 md:mt-30">
 
                     {/* HEADINGS */}
                     <motion.dev
